@@ -5,31 +5,30 @@
       <h3>Regione</h3>
       <select (change)="changeRegione($event)">
         <option >seleziona regione</option>
-        <option [value]="regione.ID" *ngFor="let regione of regione">{{regione.Name}}</option>
+        <option [value]="regione.ID" *ngFor="let regione of regioneList">{{regione.Name}}</option>
       </select>
     </div>
 
-    
-    <div *ngIf="provSelected.length > 0" class="col-sm-4">
+    <div class="col-sm-4" >
+    <div *ngIf="provSelected.length > 0">
       <h3>Provincia</h3>
       <select (change)="changeProvincia($event)">
         <option >seleziona provincia</option>
         <option [value]="province.ID" *ngFor="let province of provSelected">{{province.Name}} </option>
       </select>
     </div>
-
-
-    <div *ngIf="comSelected.length > 0" class="col-sm-4">
+</div>
+    <div class="col-sm-4" >
+    <div *ngIf="comSelected.length > 0">
       <h3>Comune</h3>
       <select (change)="changeComune($event)">
         <option [value]="comune.ID" *ngFor="let comune of comSelected">{{comune.Name}}</option>
       </select>
     </div>
+  </div>
 
-  </div>
   <div *ngIf="isVisibleLink" style="margin-top: 6%;">
-    <a href="http://localhost:4200/products">view</a>
+    <a href="http://localhost:4200/daticomune">view</a>
   </div>
-  <p id="dati"></p>
 </div>
 

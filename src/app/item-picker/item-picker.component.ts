@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { regioni } from "../../models/regioni";
-import { comuni } from "../../models/comuni";
+import { regioni, Regione } from "../../models/regioni";
+import { comuni, Comune } from "../../models/comuni";
 import { province, Provincia } from "../../models/province";
+
 @Component({
   selector: 'app-item-picker',
   templateUrl: './item-picker.component.html',
@@ -9,7 +10,7 @@ import { province, Provincia } from "../../models/province";
 })
 export class ItemPickerComponent implements OnInit {
 
-  regione = regioni;
+  regioneList = regioni;
   province = province;
   comuni = comuni;
 

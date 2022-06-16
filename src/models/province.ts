@@ -2,7 +2,7 @@ export interface Provincia{
     ID: number;
     Name: string;
     numAbitanti: number;
-    annoFondazione:number;
+    annoFondazione:Date;
     isCapoluogo:boolean;
     IdRegione:number;
 }
@@ -12,7 +12,7 @@ export const province = [
         ID: 1,
         Name: 'Roma',
         numAbitanti: 2012,
-        annoFondazione:2000,
+        annoFondazione:new Date(),
         isCapoluogo:true,
         IdRegione:1,
     },
@@ -20,7 +20,7 @@ export const province = [
         ID: 2,
         Name: 'Palermo',
         numAbitanti: 2044,
-        annoFondazione:2000,
+        annoFondazione:new Date(),
         isCapoluogo:true,
         IdRegione:2,
     },
@@ -28,7 +28,7 @@ export const province = [
         ID: 3,
         Name: 'Milano',
         numAbitanti: 2000,
-        annoFondazione:2000,
+        annoFondazione:new Date(),
         isCapoluogo:true,
         IdRegione:3,
     },
@@ -44,7 +44,7 @@ export const province = [
         ID: 5,
         Name: 'Trapani',
         numAbitanti: 300,
-        annoFondazione:2344,
+        annoFondazione:new Date(),
         isCapoluogo:true,
         IdRegione:2,
     },
@@ -52,7 +52,7 @@ export const province = [
         ID: 6,
         Name: 'Monza',
         numAbitanti: 700,
-        annoFondazione:1000,
+        annoFondazione:new Date(),
         isCapoluogo:true,
         IdRegione:3,
     }

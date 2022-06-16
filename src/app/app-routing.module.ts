@@ -5,7 +5,7 @@ import { ViewDatiComponent } from './view-dati/view-dati.component';
 
 const routes: Routes = [
   { path: '', component: ItemPickerComponent },
-  { path: 'products', component: ViewDatiComponent }
+  { path: 'daticomune', component: ViewDatiComponent }
 ];
 
 @NgModule({
