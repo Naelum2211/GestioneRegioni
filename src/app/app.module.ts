@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ItemPickerComponent } from './item-picker/item-picker.component';
+import { ViewDatiComponent } from './view-dati/view-dati.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ItemPickerComponent,
+    ViewDatiComponent
   ],
   imports: [
     BrowserModule,
